@@ -3,15 +3,15 @@ import Link from "next/link";
 
 function SignIn() {
   return (
-    <div className="h-full ">
+    <div class="h-full ">
       <div class=" rounded-full"></div>
-      <div className="flex items-center justify-center h-full w-full border bg-gray-50">
-        <form class="w-full md:w-1/3 lg:w-1/4 rounded-br-lg items-center justify-center px-10 py-16 neomorphism">
+      <div class="flex items-center justify-center h-full w-full border bg-gray-50 px-1">
+        <form class="w-full md:w-1/3 lg:w-1/4 rounded-br-lg items-center justify-center px-11 py-16 neomorphism">
           <div class="rounded-md ">
             <div>
               <h1 class="text-center text-3xl mt-5 font-bold"> Sign In </h1>
             </div>
-            <div class="mb-5 mt-7">
+            <div class="mb-6 mt-7">
               <span class="block text-gray-500 font-bold md:text-left md:mb-3 pr-40">
                 Email
               </span>
@@ -21,7 +21,7 @@ function SignIn() {
                 placeholder="Enter your Email"
               />
             </div>
-            <div>
+            <div class="mb-6 mt-7">
               <span class="block text-gray-500 font-bold md:text-left mb-1 md:mb-3 pr-40">
                 Password
               </span>
@@ -30,20 +30,22 @@ function SignIn() {
                 type="password"
                 placeholder="Enter your password"
               />
-            </div>
-            <button class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-6 py-2.5 text-center mt-8 ml-20 mb-5">
+              <div class="flex justify-between mt-4 text-purple-800 mt-6 mb-4 ">
+              <button class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:ring-purple-200 dark:focus:ring-purple-800 rounded-lg text-sm px-6 py-2.5 text-center ">
               Sign In
             </button>
-            <div class="text-center">
+            <div class="mt-1">
+              <Link href="/forgotpassword">Forgot Password?</Link>
+              </div>
+            </div>
+            </div>
+            <div class="text-center ml-5">
               <p class="flex flex-row ">
                 Don't have an account?
-                <p class="text-purple-600 ml-1.5">
+                <p class="text-purple-800 ml-1.5 text-center">
                   <Link href="/signup">Create Account</Link>
                 </p>
               </p>
-            </div>
-            <div class="text-center mt-4  text-">
-              <Link href="/forgotpassword">Forgot Password?</Link>
             </div>
           </div>
         </form>
