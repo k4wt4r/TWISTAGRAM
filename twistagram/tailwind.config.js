@@ -14,7 +14,18 @@ module.exports = {
       'lg': '1440px',
       // => @media (min-width: 1440px) { ... }
     },
-    extend: {},
+    extend: {
+      width: {
+        '40-r': '40rem',
+        '35-r': '35rem',
+        '30-r': '30rem'
+      },
+      height: {
+        '40-r': '40rem',
+        '35-r': '35rem',
+        '30-r': '30rem'
+      }
+    },
   },
   plugins: [],
 }
