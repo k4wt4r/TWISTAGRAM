@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Nav from './components/Nav/Nav'
-import SignIn from './components/SignIn'
+import Nav from '../components/Nav/Nav'
+import SignIn from '../components/SignIn'
 
 export default function Home() {
   return (
