@@ -21,7 +21,7 @@ function SignIn() {
     },
   });
   return (
-    <div className="bg-gray-800 h-screen w-screen  flex justify-center items-center ">
+    <div className="bg-gray-800 h-screen w-screen flex justify-center items-center ">
       <div className="flex items-center justify-center h-full w-full px-2">
         <div className="w-40 h-40 bg-gradient-to-r from-purple-700 via-pink-400  to-pink-200 rounded-full absolute   left-4 top-5  transform animate-pulse "></div>
         <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-aqua-500 rounded-full absolute  right-1/4  bottom-4 transform animate-pulse"></div>
@@ -73,7 +73,7 @@ function SignIn() {
               <div className="flex flex-row text-gray-200">
                 Don't have an account?
                 <p className="text-purple-400  ml-1.5 text-center">
-                  <Link href="/signUp">Create Account</Link>
+                  <Link href="/signup"><a>Create Account </a></Link>
                 </p>
               </div>
             </div>
